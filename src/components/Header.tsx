@@ -17,6 +17,7 @@ const Header = () => {
       });
     }
   }, [user]);
+
   return (
     <header className="Header">
       <div className="google">

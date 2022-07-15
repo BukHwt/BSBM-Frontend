@@ -21,7 +21,11 @@ const Header = () => {
   return (
     <header className="Header">
       <div className="google">
-        {user ? <p>{user.uid}</p> : <p>Sign In With Google</p>}
+        {user ? (
+          <p>Welcome back {user.displayName}!</p>
+        ) : (
+          <p>Sign In With Google</p>
+        )}
         {user ? (
           <button className="google-btn head-btn" onClick={signOut}>
             Sign Out
@@ -34,7 +38,7 @@ const Header = () => {
       </div>
       <Link className="header-link" to="/">
         <div className="header-container">
-          <h1 className="fuzzy"> RecipBee </h1>
+          <h1> RecipBee </h1>
         </div>
       </Link>
     </header>

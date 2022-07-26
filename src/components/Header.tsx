@@ -41,6 +41,14 @@ const Header = () => {
           <h1> RecipBee </h1>
         </div>
       </Link>
+      <div>TODO SEARCH BAR</div>
+      <nav>
+        <ul>
+          <li>LINK 1</li>
+          <li>LINK 2</li>
+          <li>LINK 3</li>
+        </ul>
+      </nav>
     </header>
   );
 };

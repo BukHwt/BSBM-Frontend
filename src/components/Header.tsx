@@ -9,6 +9,8 @@ const Header = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
+    // console.log(user);
+
     if (user) {
       getSingleUserData(user?.uid!).then((response) => {
         if (!response) {
@@ -44,7 +46,9 @@ const Header = () => {
       <div>TODO SEARCH BAR</div>
       <nav>
         <ul>
-          <li>LINK 1</li>
+          <Link className="new-brew-link" to="/newbrew">
+            <li>Add a New Brew</li>
+          </Link>
           <li>LINK 2</li>
           <li>LINK 3</li>
         </ul>

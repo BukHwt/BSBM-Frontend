@@ -12,8 +12,35 @@ export const getSingleMeadData = async (uid: string): Promise<Mead> => {
 };
 
 export const sendNewMeadData = async (
+  brewName: string,
+  style: string,
   author: string,
-  brew: string
+  authorUID: string,
+  volume: number,
+  brewDate: string,
+  honey: string,
+  honeyVariety: string,
+  honeyAmount: number,
+  base: string,
+  baseAmount: number,
+  OG: number,
+  FG: number
 ): Promise<Mead> => {
-  return (await axios.post(baseURL, { author, brew })).data;
+  return (
+    await axios.post(baseURL, {
+      brewName,
+      style,
+      author,
+      authorUID,
+      volume,
+      brewDate,
+      honey,
+      honeyVariety,
+      honeyAmount,
+      base,
+      baseAmount,
+      OG,
+      FG,
+    })
+  ).data;
 };

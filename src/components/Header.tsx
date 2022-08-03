@@ -49,7 +49,9 @@ const Header = () => {
           <Link className="new-brew-link" to="/newbrew">
             <li>Add a New Brew</li>
           </Link>
-          <li>LINK 2</li>
+          <Link className="your-brews-link" to="/yourbrews">
+            <li>Your Brews</li>
+          </Link>
           <li>LINK 3</li>
         </ul>
       </nav>

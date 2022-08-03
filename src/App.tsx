@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import NewBrew from "./components/NewBrew";
+import YourBrews from "./components/YourBrews";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/newbrew" element={<NewBrew />} />
+          <Route path="yourbrews" element={<YourBrews />} />
         </Routes>
       </Router>
       <Footer />

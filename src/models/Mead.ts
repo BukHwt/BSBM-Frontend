@@ -4,13 +4,14 @@ export default interface Mead {
   style: string;
   author: string;
   authorUID: string;
-  volume: number;
+  volume: string;
   brewDate: string;
   honey: string;
   honeyVariety: string;
-  honeyAmount: number;
+  honeyAmount: string;
   base: string;
-  baseAmount: number;
-  OG: number;
-  FG: number;
+  baseAmount: string;
+  OG: string;
+  FG: string;
+  recipe: string;
 }

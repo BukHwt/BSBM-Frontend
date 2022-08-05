@@ -9,7 +9,7 @@ const BrewCard = ({ singleMead }: Props) => {
   return (
     <li className="BrewCard">
       <h3>Brew:{singleMead.brewName}</h3>
-      <p>Style:{singleMead.author}</p>
+      <p>Style:{singleMead.style}</p>
     </li>
   );
 };

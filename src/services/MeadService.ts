@@ -24,7 +24,8 @@ export const sendNewMeadData = async (
   base: string,
   baseAmount: number,
   OG: number,
-  FG: number
+  FG: number,
+  recipe: string
 ): Promise<Mead> => {
   return (
     await axios.post(baseURL, {
@@ -41,6 +42,7 @@ export const sendNewMeadData = async (
       baseAmount,
       OG,
       FG,
+      recipe,
     })
   ).data;
 };

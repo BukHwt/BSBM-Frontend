@@ -22,7 +22,7 @@ const Main = () => {
 
   return (
     <div className="Main">
-      <ul>
+      <ul className="main-list">
         {meads?.map((mead) => (
           <BrewCard key={mead._id} singleMead={mead} />
         ))}

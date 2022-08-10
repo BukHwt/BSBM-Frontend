@@ -8,9 +8,9 @@ interface Props {
 const BrewCard = ({ singleMead }: Props) => {
   return (
     <li className="BrewCard">
-      <h3>Brew:{singleMead.brewName}</h3>
+      <h3>{singleMead.brewName}</h3>
       <p>Style:{singleMead.style}</p>
-      <p>OG:{singleMead.OG}</p>
+      <p>OG:{parseFloat(singleMead.OG).toFixed(3)}</p>
     </li>
   );
 };

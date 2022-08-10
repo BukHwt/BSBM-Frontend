@@ -1,6 +1,17 @@
-Header {
+/* resets */
+
+/* Header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+} */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 169, 55);
+  width: 100%;
 }

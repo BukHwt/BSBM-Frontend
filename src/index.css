@@ -1,1 +1,22 @@
+p,
+h1,
+h2,
+li,
+img,
+div,
+form,
+header,
+main,
+h3,
+input,
+label,
+button,
+ul,
+body {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background: rgb(232, 235, 247);
+}

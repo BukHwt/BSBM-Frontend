@@ -7,8 +7,8 @@ export const getMeadData = async (): Promise<Mead[]> => {
   return (await axios.get(baseURL)).data;
 };
 
-export const getSingleMeadData = async (uid: string): Promise<Mead> => {
-  return (await axios.get(`${baseURL}/${encodeURIComponent(uid)}`)).data;
+export const getSingleMeadData = async (id: string): Promise<Mead> => {
+  return (await axios.get(`${baseURL}/${encodeURIComponent(id)}`)).data;
 };
 
 export const sendNewMeadData = async (

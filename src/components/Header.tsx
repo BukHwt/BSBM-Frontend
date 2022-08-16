@@ -52,7 +52,9 @@ const Header = () => {
           <Link className="your-brews-link" to="/yourbrews">
             <li>Your Brews</li>
           </Link>
-          <li>LINK 3</li>
+          <Link className="hire-me-link" to="/hireme">
+            <li>About the Developer</li>
+          </Link>
         </ul>
       </nav>
     </header>

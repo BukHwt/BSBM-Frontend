@@ -1,0 +1,15 @@
+.HireMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hire-me-story p {
+  margin: 10px;
+}

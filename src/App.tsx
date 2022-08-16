@@ -8,6 +8,7 @@ import "./App.css";
 import BrewPage from "./components/BrewPage";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import HireMe from "./components/HireMe";
 import Main from "./components/Main";
 import NewBrew from "./components/NewBrew";
 import YourBrews from "./components/YourBrews";
@@ -22,6 +23,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/newbrew" element={<NewBrew />} />
           <Route path="/yourbrews" element={<YourBrews />} />
+          <Route path="/hireme" element={<HireMe />} />
           <Route path="/:id" element={<BrewPage />} />
         </Routes>
       </Router>

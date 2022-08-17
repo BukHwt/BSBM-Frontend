@@ -10,6 +10,9 @@ const BrewCard = ({ singleMead }: Props) => {
   return (
     <li className="BrewCard">
       <Link to={`/${encodeURI(singleMead._id!)}`}>
+        <img src="assets/horn.svg" alt="brew" />
+      </Link>
+      <Link to={`/${encodeURI(singleMead._id!)}`}>
         <h3>{singleMead.brewName}</h3>
       </Link>
       <p>Style:{singleMead.style}</p>

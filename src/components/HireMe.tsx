@@ -4,7 +4,7 @@ const HireMe = () => {
   return (
     <div className="HireMe">
       <h1>About the Developer</h1>
-      <img src="https://imgur.com/k0wyzmh.jpg" alt="Big Steve" />
+      <img src="assets/Profile_Pic.jpg" alt="Big Steve" />
       <div className="grid-box">
         <div className="hire-me-story">
           <h2>

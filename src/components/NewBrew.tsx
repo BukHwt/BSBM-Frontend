@@ -1,4 +1,4 @@
-import { FormEvent, useContext, useEffect, useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import AuthContext from "../context/AuthContext";
 import { sendNewMeadData } from "../services/MeadService";
 import "./NewBrew.css";
@@ -33,6 +33,7 @@ const NewBrew = () => {
     setBaseAmount(0);
     setOG(0);
     setFG(0);
+    setRecipe("");
   };
 
   const submitHandler = (e: FormEvent): void => {
@@ -56,9 +57,9 @@ const NewBrew = () => {
     resetAllStates();
   };
 
-  useEffect(() => {
-    console.log(user);
-  }, [user]);
+  // useEffect(() => {
+  //   console.log(user);
+  // }, [user]);
 
   return (
     <div className="NewBrew main">

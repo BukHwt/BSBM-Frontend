@@ -17,6 +17,8 @@ const Main = () => {
 
   useEffect(() => {
     getAndSetMead();
+    console.log(user);
+
     console.log(meads);
   }, [user]);
 

@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/newbrew" element={<NewBrew />} />
-          <Route path="/yourbrews" element={<YourBrews />} />
+          <Route path="/yourbrews/:authorUID" element={<YourBrews />} />
           <Route path="/hireme" element={<HireMe />} />
           <Route path="/:id" element={<BrewPage />} />
         </Routes>

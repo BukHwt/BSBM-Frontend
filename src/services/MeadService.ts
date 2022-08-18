@@ -11,6 +11,14 @@ export const getSingleMeadData = async (id: string): Promise<Mead> => {
   return (await axios.get(`${baseURL}/${encodeURIComponent(id)}`)).data;
 };
 
+export const getSingleAuthorMeadData = async (
+  authorUID: string
+): Promise<Mead[]> => {
+  return (
+    await axios.get(`${baseURL}/yourbrews/${encodeURIComponent(authorUID)}`)
+  ).data;
+};
+
 export const sendNewMeadData = async (
   brewName: string,
   style: string,

@@ -49,7 +49,10 @@ const Header = () => {
           <Link className="new-brew-link" to="/newbrew">
             <li>Add a New Brew</li>
           </Link>
-          <Link className="your-brews-link" to="/yourbrews">
+          <Link
+            className="your-brews-link"
+            to={`/yourbrews/${encodeURI(user?.uid!)}`}
+          >
             <li>Your Brews</li>
           </Link>
           <Link className="hire-me-link" to="/hireme">

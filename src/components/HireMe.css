@@ -13,3 +13,8 @@
 .hire-me-story p {
   margin: 10px;
 }
+
+.profile-pic {
+  height: 25vh;
+  width: auto;
+}

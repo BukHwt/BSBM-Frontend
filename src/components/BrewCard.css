@@ -2,13 +2,14 @@
   border: 1px black solid;
   margin: 10px;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 23px;
   box-shadow: 2px 2px 5px black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 18vw;
+  background-color: rgb(232, 235, 247);
 }
 
 img {

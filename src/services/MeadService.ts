@@ -51,6 +51,8 @@ export const sendNewMeadData = async (
       OG,
       FG,
       recipe,
+      dateAdded: new Date().toISOString().slice(0, 10),
+      lastUpdate: new Date().toISOString().slice(0, 10),
     })
   ).data;
 };

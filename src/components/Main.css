@@ -1,7 +1,9 @@
 .Main {
-  background-color: rgb(232, 235, 247);
   margin: 25px;
   padding: 10px;
+  background-color: rgb(10, 18, 42);
+  border-radius: 23px;
+  box-shadow: 2px 2px 5px black;
 }
 
 .main-list {

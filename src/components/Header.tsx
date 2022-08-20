@@ -24,7 +24,9 @@ const Header = () => {
     <header className="Header">
       <div className="google">
         {user ? (
-          <p>Welcome back {user.displayName}!</p>
+          <>
+            <p>Welcome back:</p> <p>{user.displayName}!</p>
+          </>
         ) : (
           <p>Sign In With Google</p>
         )}
@@ -44,7 +46,7 @@ const Header = () => {
         </div>
       </Link>
       <div>TODO SEARCH BAR</div>
-      <nav>
+      <nav className="header-nav">
         <ul>
           <Link className="new-brew-link" to="/newbrew">
             <li>Add a New Brew</li>

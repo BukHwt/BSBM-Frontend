@@ -1,10 +1,11 @@
 import "./HireMe.css";
+import Pic from "./assets/Profile_Pic.jpg";
 
 const HireMe = () => {
   return (
     <div className="HireMe">
       <h1>About the Developer</h1>
-      <img src="assets/Profile_Pic.jpg" alt="Big Steve" />
+      <img src={Pic} alt="Big Steve" className="profile-pic" />
       <div className="grid-box">
         <div className="hire-me-story">
           <h2>

@@ -25,6 +25,7 @@ function App() {
           <Route path="/yourbrews/:authorUID" element={<YourBrews />} />
           <Route path="/hireme" element={<HireMe />} />
           <Route path="/:id" element={<BrewPage />} />
+          <Route path="/editbrew" element={<NewBrew />} />
         </Routes>
       </Router>
       <Footer />

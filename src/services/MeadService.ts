@@ -53,6 +53,47 @@ export const sendNewMeadData = async (
       recipe,
       dateAdded: new Date().toISOString().slice(0, 10),
       lastUpdate: new Date().toISOString().slice(0, 10),
+      featured: false,
+    })
+  ).data;
+};
+
+export const sendUpdatedMeadData = async (
+  brewName: string,
+  style: string,
+  author: string,
+  authorUID: string,
+  volume: number,
+  brewDate: string,
+  honey: string,
+  honeyVariety: string,
+  honeyAmount: number,
+  base: string,
+  baseAmount: number,
+  OG: number,
+  FG: number,
+  recipe: string,
+  dateAdded: string
+): Promise<Mead> => {
+  return (
+    await axios.put(baseURL, {
+      brewName,
+      style,
+      author,
+      authorUID,
+      volume,
+      brewDate,
+      honey,
+      honeyVariety,
+      honeyAmount,
+      base,
+      baseAmount,
+      OG,
+      FG,
+      recipe,
+      dateAdded,
+      lastUpdate: new Date().toISOString().slice(0, 10),
+      featured: false,
     })
   ).data;
 };

@@ -16,4 +16,5 @@ export default interface Mead {
   recipe: string;
   dateAdded: string;
   lastUpdate: string;
+  featured: boolean;
 }

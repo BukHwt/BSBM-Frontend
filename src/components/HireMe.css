@@ -2,12 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
+  background-color: rgb(10, 18, 42);
+  margin: 10px;
+  border-radius: 23px;
+  height: 78vh;
+  padding: 10px;
 }
 
-.grid-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.hire-me-header {
+  background-color: rgb(232, 235, 247);
+  margin: 10px;
+  border-radius: 23px;
+  padding: 10px;
+}
+
+.hire-me-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(232, 235, 247);
+  margin: 10px;
+  border-radius: 23px;
+  padding: 10px;
 }
 
 .hire-me-story p {
